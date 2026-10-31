@@ -81,6 +81,36 @@ o JSON
 
 o XML
 
+o Text
+• A real-time dataset contains data that is generated or collected continuously from a real-world system
+
+• The data is made available for processing and analysis immediately or with very little delay after it is generated.
+
+• Real-time data is often produced by:
+
+o Sensors
+
+o IoT devices
+
+o Mobile applications
+
+o GPS devices
+
+o Smart meters
+
+o Websites
+
+o Financial systems
+
+o Medical devices
+
+• Real-time data can continuously change as new observations arrive.
+
+• It is commonly used for real-time monitoring, prediction, and decision-making.
+o Text
+• Real-time data can continuously change as new observations arrive.
+
+• It is commonly used for real-time monitoring, prediction, and decision-making.
 o Power usage
 
 o Smart-meter readings
@@ -134,4 +164,4 @@ o Travel time
 o Traffic conditions
 
 # RESULT
-Thus, the dataset and data analytics concepts were studied successfully, including publicly available and real-time datasets and their applications.
+Thus, the dataset and data analytics concepts were studied successfully, including publicly available and real-time datasets and their applications
