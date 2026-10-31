@@ -78,6 +78,47 @@ To perform data preprocessing on a dataset using Python and Scikit-learn by hand
     print("One-Hot Encoded Country:")
     print(x_country)
 
+    labelencoder_y = LabelEncoder()
+
+    y = labelencoder_y.fit_transform(y)
+
+    print("\nEncoded Dependent Variable:")
+    print(y)
+
+
+    from sklearn.model_selection import train_test_split
+
+    x_train, x_test, y_train, y_test = train_test_split(
+    x,
+    y,
+    test_size=0.2,
+    random_state=0
+    )
+
+    print("X Training Data:")
+    print(x_train)
+
+    print("\nX Testing Data:")
+    print(x_test)
+
+    print("\nY Training Data:")
+    print(y_train)
+
+    print("\nY Testing Data:")
+    print(y_test)
+
+    from sklearn.preprocessing import StandardScaler
+    sc_x = StandardScaler()
+    x_train = sc_x.fit_transform(x_train)
+
+    x_test = sc_x.transform(x_test)
+
+    print("Scaled X Training Data:")
+    print(x_train)
+
+    print("\nScaled X Testing Data:")
+    print(x_test)
+
 ## OUTPUT
 <img width="357" height="246" alt="image" src="https://github.com/user-attachments/assets/e0b92d03-f9d8-45bf-98e9-a17fa88dfa92" />
 <img width="422" height="327" alt="image" src="https://github.com/user-attachments/assets/0394e2d0-c63d-4195-96bd-aad1382b2bc1" />
