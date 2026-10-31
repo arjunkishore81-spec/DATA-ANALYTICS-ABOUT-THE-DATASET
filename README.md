@@ -77,3 +77,15 @@ To perform data preprocessing on a dataset using Python and Scikit-learn by hand
 
     print("One-Hot Encoded Country:")
     print(x_country)
+
+## OUTPUT
+<img width="357" height="246" alt="image" src="https://github.com/user-attachments/assets/e0b92d03-f9d8-45bf-98e9-a17fa88dfa92" />
+<img width="422" height="327" alt="image" src="https://github.com/user-attachments/assets/0394e2d0-c63d-4195-96bd-aad1382b2bc1" />
+<img width="280" height="522" alt="image" src="https://github.com/user-attachments/assets/ad2e456a-1ad7-4c8f-89e3-28db89af9f5d" />
+<img width="412" height="251" alt="image" src="https://github.com/user-attachments/assets/f39d9a18-ffd1-46f1-932e-bc8292923d2c" />
+<img width="281" height="311" alt="image" src="https://github.com/user-attachments/assets/44a9e458-a798-4591-9003-2645260d2254" />
+<img width="310" height="422" alt="image" src="https://github.com/user-attachments/assets/f2fa933c-d740-4c14-ad02-d5e6931bad17" />
+<img width="440" height="291" alt="image" src="https://github.com/user-attachments/assets/fcec91ff-197e-437e-a494-63dfabfde215" />
+
+## Conclusion
+Thus, the given dataset was successfully preprocessed by handling missing values, encoding categorical variables, splitting the data into training and testing sets, and performing feature scaling.
