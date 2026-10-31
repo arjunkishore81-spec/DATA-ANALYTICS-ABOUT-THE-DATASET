@@ -1,132 +1,82 @@
-# Ex.No-3b-DATA PREPROCESSING
-## Aim
-To perform data preprocessing on a dataset using Python and Scikit-learn by handling missing values, encoding categorical data, splitting the dataset, and applying feature scaling. 
-## Procedure
-1.	Import the required Python libraries. 
-2.	Mount Google Drive and load the dataset using Pandas.
-3.	Display the first few records of the dataset. 
-4.	Inspect the dataset using df.info() and df.shape. 
-5.	Separate the independent variables (X) and dependent variable (Y). 
-6.	Convert the independent variables into an array. 
-7.	Identify and handle missing values using SimpleImputer with the mean strategy. 
-8.	Encode the categorical Country column using LabelEncoder. 
-9.	Apply One-Hot Encoding to convert categorical country values into dummy variables. 
-10.	Encode the dependent variable Purchased using LabelEncoder. 
-11.	Split the dataset into training and testing sets using train_test_split. 
-12.	Apply StandardScaler for feature scaling. 
-13.	Display the preprocessed training and testing datasets.
-### Program
-    from google.colab import drive
-    drive.mount('/content/drive')
-    import pandas as pd
-    df = pd.read_csv('/content/drive/My Drive/Data.csv')
-    df.head()
+# EXP NO:3a
+# DATE:31/10/2026
+# NAME:A.KISHORE
+# REG NO:212225060126
 
 
-    print("Dataset Information:")
-    df.info()
-
-    print("\nDataset Shape:")
-    print(df.shape)
 
 
-    x = df[['Country', 'Age', 'Salary']]
-    y = df[['Purchased']].values
 
-    x = df[['Country', 'Age', 'Salary']].values
+# DATA-ANALYTICS-ABOUT-THE-DATASET
+# AIM
+To perform data analytics on a given dataset using Python and Pandas, understand the characteristics of the dataset, identify different types of data, examine missing values, and prepare the dataset for further analysis and machine learning.
+# INTRODUCTION
+Data Analytics is the process of examining, cleaning, transforming, and interpreting
+data to discover useful information, patterns, and relationships.
 
-    print("Independent Variable X:")
-    print(x)
+A dataset usually contains:
 
-    print("\nDependent Variable Y:")
-    print(y)
+1. Rows – individual observations or records.
+2. Columns – attributes or features describing each record.
+3. Numerical data – values represented by numbers.
+4. Categorical data – values represented by categories or labels.
+   
+In this experiment, the dataset contains information about customers and their
+purchasing behavior. The four attributes are:
 
+Country, Age, Salary, and Purchased.
 
-    from sklearn.impute import SimpleImputer
+The uploaded notebook shows that the dataset contains 10 records and 4 columns.
+# THEORY
+1 What is Data Analytics?
 
-    imputer = SimpleImputer(
-    missing_values=np.nan,
-    strategy='mean'
-    )
+Data Analytics is the systematic process of studying data to obtain meaningful
+information.
 
-    imputer.fit(x[:, 1:3])
+The general data analytics process is:
 
-    x[:, 1:3] = imputer.transform(x[:, 1:3])
+Data Collection → Data Understanding → Data Cleaning → Data Transformation →
+Data Analysis → Interpretation
 
-    print("After Handling Missing Values:")
-    print(x)
+For example, an e-commerce company may collect customer information such as:
+Country
 
+Age
 
-    from sklearn.preprocessing import LabelEncoder
+Salary
 
-    label_encoder_x = LabelEncoder()
+Product purchased
 
-    x[:, 0] = label_encoder_x.fit_transform(x[:, 0])
+By analyzing this information, the company can identify customer purchasing patterns.
+# DATASET
+A dataset is a collection of related data organized in the form of rows and columns. It
+is used to store, analyze, and understand information. In this experiment, the dataset
+contains customer details such as Country, Age, Salary, and Purchased.
 
-    print("After Label Encoding:")
-    print(x)
+Publicly Available Dataset
 
+1. A publicly available dataset is a collection of data that is made accessible to
+students, researchers, developers, or the general public.
+2. It can usually be downloaded or accessed online for analysis and research.
+3. Public datasets are commonly used for:
+o Data Analytics
 
-    from sklearn.preprocessing import OneHotEncoder
+o Data Science
 
-    onehotencoder = OneHotEncoder()
+o Machine Learning
 
-    x_country = onehotencoder.fit_transform(
-    df.Country.values.reshape(-1, 1)
-    ).toarray()
+o Artificial Intelligence
 
-    print("One-Hot Encoded Country:")
-    print(x_country)
+o Research
 
-    labelencoder_y = LabelEncoder()
+o Laboratory experiments
 
-    y = labelencoder_y.fit_transform(y)
+ Public datasets may be available in formats such as:
+ 
+o CSV
 
-    print("\nEncoded Dependent Variable:")
-    print(y)
+o Excel
 
+o JSON
 
-    from sklearn.model_selection import train_test_split
-
-    x_train, x_test, y_train, y_test = train_test_split(
-    x,
-    y,
-    test_size=0.2,
-    random_state=0
-    )
-
-    print("X Training Data:")
-    print(x_train)
-
-    print("\nX Testing Data:")
-    print(x_test)
-
-    print("\nY Training Data:")
-    print(y_train)
-
-    print("\nY Testing Data:")
-    print(y_test)
-
-    from sklearn.preprocessing import StandardScaler
-    sc_x = StandardScaler()
-    x_train = sc_x.fit_transform(x_train)
-
-    x_test = sc_x.transform(x_test)
-
-    print("Scaled X Training Data:")
-    print(x_train)
-
-    print("\nScaled X Testing Data:")
-    print(x_test)
-
-## OUTPUT
-<img width="357" height="246" alt="image" src="https://github.com/user-attachments/assets/e0b92d03-f9d8-45bf-98e9-a17fa88dfa92" />
-<img width="422" height="327" alt="image" src="https://github.com/user-attachments/assets/0394e2d0-c63d-4195-96bd-aad1382b2bc1" />
-<img width="280" height="522" alt="image" src="https://github.com/user-attachments/assets/ad2e456a-1ad7-4c8f-89e3-28db89af9f5d" />
-<img width="412" height="251" alt="image" src="https://github.com/user-attachments/assets/f39d9a18-ffd1-46f1-932e-bc8292923d2c" />
-<img width="281" height="311" alt="image" src="https://github.com/user-attachments/assets/44a9e458-a798-4591-9003-2645260d2254" />
-<img width="310" height="422" alt="image" src="https://github.com/user-attachments/assets/f2fa933c-d740-4c14-ad02-d5e6931bad17" />
-<img width="440" height="291" alt="image" src="https://github.com/user-attachments/assets/fcec91ff-197e-437e-a494-63dfabfde215" />
-
-## RESULT
-Thus, the given dataset was successfully preprocessed by handling missing values, encoding categorical variables, splitting the data into training and testing sets, and performing feature scaling.
+o XML
