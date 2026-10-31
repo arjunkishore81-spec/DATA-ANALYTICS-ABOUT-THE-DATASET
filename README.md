@@ -128,5 +128,5 @@ To perform data preprocessing on a dataset using Python and Scikit-learn by hand
 <img width="310" height="422" alt="image" src="https://github.com/user-attachments/assets/f2fa933c-d740-4c14-ad02-d5e6931bad17" />
 <img width="440" height="291" alt="image" src="https://github.com/user-attachments/assets/fcec91ff-197e-437e-a494-63dfabfde215" />
 
-## Conclusion
+## RESULT
 Thus, the given dataset was successfully preprocessed by handling missing values, encoding categorical variables, splitting the data into training and testing sets, and performing feature scaling.
