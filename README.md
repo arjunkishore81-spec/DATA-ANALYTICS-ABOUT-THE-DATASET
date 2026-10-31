@@ -7,7 +7,7 @@
 
 
 
-# DATA-ANALYTICS-ABOUT-THE-DATASET
+# 3A DATA-ANALYTICS-ABOUT-THE-DATASET
 # AIM
 To perform data analytics on a given dataset using Python and Pandas, understand the characteristics of the dataset, identify different types of data, examine missing values, and prepare the dataset for further analysis and machine learning.
 # INTRODUCTION
@@ -80,3 +80,115 @@ o Excel
 o JSON
 
 o XML
+
+
+o Power usage
+
+o Smart-meter readings
+
+• Healthcare
+
+o Heart rate
+
+o Blood pressure
+
+o Temperature
+
+o Oxygen level
+
+• Weather
+
+o Temperature
+
+o Humidity
+
+o Rainfall
+
+o Wind speed
+
+• Banking
+
+o Transactions
+
+o Payments
+
+o Account activity
+
+• E-Commerce
+
+o Customer clicks
+
+o Product views
+
+o Orders
+
+o Purchases
+
+• Transportation
+
+o Vehicle location
+
+o Speed
+
+o Travel time
+
+o Traffic conditions
+
+# RESULT
+Thus, the dataset and data analytics concepts were studied successfully, including publicly available and real-time datasets and their applications.
+
+
+o Power usage
+
+o Smart-meter readings
+
+• Healthcare
+
+o Heart rate
+
+o Blood pressure
+
+o Temperature
+
+o Oxygen level
+
+• Weather
+
+o Temperature
+
+o Humidity
+
+o Rainfall
+
+o Wind speed
+
+• Banking
+
+o Transactions
+
+o Payments
+
+o Account activity
+
+• E-Commerce
+
+o Customer clicks
+
+o Product views
+
+o Orders
+
+o Purchases
+
+• Transportation
+
+o Vehicle location
+
+o Speed
+
+o Travel time
+
+o Traffic conditions
+
+# RESULT
+Thus, the dataset and data analytics concepts were studied successfully, including publicly available and real-time datasets and their applications.
